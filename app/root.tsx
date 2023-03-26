@@ -1,5 +1,5 @@
 import type { LinksFunction } from "@remix-run/node"
-import { Links, LiveReload, Outlet } from "@remix-run/react"
+import { Links, LiveReload, Outlet, Scripts } from "@remix-run/react"
 
 import styles from "./styles/tailwind.css"
 
@@ -21,7 +21,12 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <script
+          type="text/javascript"
+          src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=fttj5enfvf"
+        ></script>
         <Outlet />
+        <Scripts />
         <LiveReload />
       </body>
     </html>

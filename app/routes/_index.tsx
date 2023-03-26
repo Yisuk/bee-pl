@@ -1,19 +1,13 @@
 import { Link } from "@remix-run/react"
+import { Map } from "~/components/map"
 
 export default function IndexRoute() {
   return (
     <div>
       <div>
-        <h1>
-          Remix <span className="h-20">Jokes!</span>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="jokes">Read Jokes</Link>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <Map />
+        </div>
       </div>
     </div>
   )
